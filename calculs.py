@@ -41,24 +41,20 @@ def calcul_economie(revenu_brut, versement_3a, statut, enfants, npa, religion):
 
     revenu_imposable = max(0, revenu_brut - versement_3a)
 
-    # Recherche des barèmes selon le NPA
     commune, canton, taux_communal, taux_religion = trouver_commune_et_canton(communes, npa, religion)
     if not canton:
         return None
 
-    # Barème Confédération
     bareme_conf = conf.get(situation, [])
     impot_conf_avant = appliquer_bareme(bareme_conf, revenu_brut)
     impot_conf_apres = appliquer_bareme(bareme_conf, revenu_imposable)
     economie_conf = impot_conf_avant - impot_conf_apres
 
-    # Barème Canton
     bareme_canton = cantons.get(canton, {}).get(situation, [])
     impot_cantonal_avant = appliquer_bareme(bareme_canton, revenu_brut)
     impot_cantonal_apres = appliquer_bareme(bareme_canton, revenu_imposable)
     economie_canton = impot_cantonal_avant - impot_cantonal_apres
 
-    # Barème Commune et Religion (sur base cantonale)
     economie_commune = economie_canton * (taux_communal / 100)
     economie_religion = economie_canton * (taux_religion / 100)
 
