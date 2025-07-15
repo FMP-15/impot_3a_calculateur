@@ -1,216 +1,866 @@
 {
   "AG": {
     "Personne vivant seule, sans enfant": [
-      {
-        "seuil": 15600,
-        "taux": 0.77
-      },
-      {
-        "seuil": 19200,
-        "taux": 2.28
-      },
-      {
-        "seuil": 24000,
-        "taux": 2.94
-      },
-      {
-        "seuil": 32400,
-        "taux": 3.74
-      },
-      {
-        "seuil": 44400,
-        "taux": 4.56
-      },
-      {
-        "seuil": 58800,
-        "taux": 5.23
-      },
-      {
-        "seuil": 80400,
-        "taux": 5.76
-      },
-      {
-        "seuil": 107999,
-        "taux": 6.26
-      },
-      {
-        "seuil": 107999999,
-        "taux": 6.4
-      }
+      {"seuil": 15600, "taux": 0.77},
+      {"seuil": 19200, "taux": 2.28},
+      {"seuil": 24000, "taux": 2.94},
+      {"seuil": 32400, "taux": 3.74},
+      {"seuil": 44400, "taux": 4.56},
+      {"seuil": 58800, "taux": 5.23},
+      {"seuil": 80400, "taux": 5.76},
+      {"seuil": 107999, "taux": 6.26},
+      {"seuil": 107999999, "taux": 6.4}
     ],
     "Personne mariée / vivant seule, avec enfant": [
-      {
-        "seuil": 30000,
-        "taux": 0.77
-      },
-      {
-        "seuil": 34800,
-        "taux": 2.28
-      },
-      {
-        "seuil": 40800,
-        "taux": 2.94
-      },
-      {
-        "seuil": 51600,
-        "taux": 3.74
-      },
-      {
-        "seuil": 67200,
-        "taux": 4.56
-      },
-      {
-        "seuil": 88800,
-        "taux": 5.23
-      },
-      {
-        "seuil": 114000,
-        "taux": 5.76
-      },
-      {
-        "seuil": 135599,
-        "taux": 6.26
-      },
-      {
-        "seuil": 135599999,
-        "taux": 6.4
-      }
+      {"seuil": 30000, "taux": 0.77},
+      {"seuil": 34800, "taux": 2.28},
+      {"seuil": 40800, "taux": 2.94},
+      {"seuil": 51600, "taux": 3.74},
+      {"seuil": 67200, "taux": 4.56},
+      {"seuil": 88800, "taux": 5.23},
+      {"seuil": 114000, "taux": 5.76},
+      {"seuil": 135599, "taux": 6.26},
+      {"seuil": 135599999, "taux": 6.4}
     ]
   },
   "AI": {
     "Personne vivant seule, sans enfant": [
-      {
-        "seuil": 8400,
-        "taux": 1.0
-      },
-      {
-        "seuil": 12000,
-        "taux": 2.0
-      },
-      {
-        "seuil": 16800,
-        "taux": 3.0
-      },
-      {
-        "seuil": 20400,
-        "taux": 4.0
-      },
-      {
-        "seuil": 24000,
-        "taux": 5.0
-      },
-      {
-        "seuil": 31200,
-        "taux": 6.0
-      },
-      {
-        "seuil": 43200,
-        "taux": 7.0
-      },
-      {
-        "seuil": 57600,
-        "taux": 8.0
-      },
-      {
-        "seuil": 74400,
-        "taux": 9.0
-      },
-      {
-        "seuil": 91200,
-        "taux": 10.0
-      },
-      {
-        "seuil": 108000,
-        "taux": 11.0
-      },
-      {
-        "seuil": 122400,
-        "taux": 12.0
-      },
-      {
-        "seuil": 135600,
-        "taux": 13.0
-      },
-      {
-        "seuil": 148800,
-        "taux": 14.0
-      },
-      {
-        "seuil": 162000,
-        "taux": 15.0
-      },
-      {
-        "seuil": 175200,
-        "taux": 16.0
-      },
-      {
-        "seuil": 188400,
-        "taux": 17.0
-      },
-      {
-        "seuil": 201600,
-        "taux": 18.0
-      },
-      {
-        "seuil": 214800,
-        "taux": 19.0
-      },
-      {
-        "seuil": 228000,
-        "taux": 20.0
-      }
+      {"seuil": 8400, "taux": 1.0},
+      {"seuil": 12000, "taux": 2.0},
+      {"seuil": 16800, "taux": 3.0},
+      {"seuil": 20400, "taux": 4.0},
+      {"seuil": 24000, "taux": 5.0},
+      {"seuil": 31200, "taux": 6.0},
+      {"seuil": 43200, "taux": 7.0},
+      {"seuil": 57600, "taux": 8.0},
+      {"seuil": 74400, "taux": 9.0},
+      {"seuil": 91200, "taux": 10.0},
+      {"seuil": 108000, "taux": 11.0},
+      {"seuil": 122400, "taux": 12.0},
+      {"seuil": 135600, "taux": 13.0},
+      {"seuil": 148800, "taux": 14.0},
+      {"seuil": 162000, "taux": 15.0},
+      {"seuil": 175200, "taux": 16.0},
+      {"seuil": 188400, "taux": 17.0},
+      {"seuil": 201600, "taux": 18.0},
+      {"seuil": 214800, "taux": 19.0},
+      {"seuil": 228000, "taux": 20.0}
     ]
   },
   "AR": {
     "Personne vivant seule, sans enfant": [
-      {
-        "seuil": 11400,
-        "taux": 0.5
-      },
-      {
-        "seuil": 22800,
-        "taux": 1.0
-      },
-      {
-        "seuil": 34200,
-        "taux": 1.5
-      },
-      {
-        "seuil": 45600,
-        "taux": 2.0
-      },
-      {
-        "seuil": 68400,
-        "taux": 2.5
-      },
-      {
-        "seuil": 91200,
-        "taux": 3.0
-      },
-      {
-        "seuil": 114000,
-        "taux": 3.5
-      },
-      {
-        "seuil": 136800,
-        "taux": 4.0
-      },
-      {
-        "seuil": 159600,
-        "taux": 4.5
-      },
-      {
-        "seuil": 182400,
-        "taux": 5.0
-      },
-      {
-        "seuil": 205200,
-        "taux": 5.5
-      },
-      {
-        "seuil": 228000,
-        "taux": 6.0
-      }
+      {"seuil": 11400, "taux": 0.5},
+      {"seuil": 22800, "taux": 1.0},
+      {"seuil": 34200, "taux": 1.5},
+      {"seuil": 45600, "taux": 2.0},
+      {"seuil": 68400, "taux": 2.5},
+      {"seuil": 91200, "taux": 3.0},
+      {"seuil": 114000, "taux": 3.5},
+      {"seuil": 136800, "taux": 4.0},
+      {"seuil": 159600, "taux": 4.5},
+      {"seuil": 182400, "taux": 5.0},
+      {"seuil": 205200, "taux": 5.5},
+      {"seuil": 228000, "taux": 6.0}
     ]
-  }
-}
+  },
+  "BL": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 6000, "taux": 0.0},
+      {"seuil": 12000, "taux": 0.4},
+      {"seuil": 18000, "taux": 0.8},
+      {"seuil": 24000, "taux": 1.2},
+      {"seuil": 30000, "taux": 1.6},
+      {"seuil": 36000, "taux": 2.0},
+      {"seuil": 42000, "taux": 2.4},
+      {"seuil": 48000, "taux": 2.8},
+      {"seuil": 54000, "taux": 3.2},
+      {"seuil": 60000, "taux": 3.6},
+      {"seuil": 66000, "taux": 4.0},
+      {"seuil": 72000, "taux": 4.4},
+      {"seuil": 78000, "taux": 4.8},
+      {"seuil": 84000, "taux": 5.2},
+      {"seuil": 90000, "taux": 5.6},
+      {"seuil": 96000, "taux": 6.0},
+      {"seuil": 102000, "taux": 6.4},
+      {"seuil": 108000, "taux": 6.8},
+      {"seuil": 114000, "taux": 7.2},
+      {"seuil": 120000, "taux": 7.6},
+      {"seuil": 126000, "taux": 8.0},
+      {"seuil": 132000, "taux": 8.4},
+      {"seuil": 138000, "taux": 8.8},
+      {"seuil": 144000, "taux": 9.2},
+      {"seuil": 150000, "taux": 9.6}
+    ]
+  },
+  "BS": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 6000, "taux": 0.0},
+      {"seuil": 12000, "taux": 0.4},
+      {"seuil": 18000, "taux": 0.9},
+      {"seuil": 24000, "taux": 1.4},
+      {"seuil": 30000, "taux": 1.9},
+      {"seuil": 36000, "taux": 2.4},
+      {"seuil": 42000, "taux": 2.9},
+      {"seuil": 48000, "taux": 3.4},
+      {"seuil": 54000, "taux": 3.9},
+      {"seuil": 60000, "taux": 4.4},
+      {"seuil": 66000, "taux": 4.9},
+      {"seuil": 72000, "taux": 5.4},
+      {"seuil": 78000, "taux": 5.9},
+      {"seuil": 84000, "taux": 6.4},
+      {"seuil": 90000, "taux": 6.9},
+      {"seuil": 96000, "taux": 7.4},
+      {"seuil": 102000, "taux": 7.9},
+      {"seuil": 108000, "taux": 8.4},
+      {"seuil": 114000, "taux": 8.9},
+      {"seuil": 120000, "taux": 9.4},
+      {"seuil": 126000, "taux": 9.9},
+      {"seuil": 132000, "taux": 10.4},
+      {"seuil": 138000, "taux": 10.9},
+      {"seuil": 144000, "taux": 11.4},
+      {"seuil": 150000, "taux": 11.9}
+    ]
+  },
+    "BE": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 9800, "taux": 0.0},
+      {"seuil": 13000, "taux": 0.5},
+      {"seuil": 17000, "taux": 1.0},
+      {"seuil": 21000, "taux": 1.5},
+      {"seuil": 25000, "taux": 2.0},
+      {"seuil": 30000, "taux": 2.5},
+      {"seuil": 36000, "taux": 3.0},
+      {"seuil": 42000, "taux": 3.5},
+      {"seuil": 48000, "taux": 4.0},
+      {"seuil": 54000, "taux": 4.5},
+      {"seuil": 60000, "taux": 5.0},
+      {"seuil": 66000, "taux": 5.5},
+      {"seuil": 72000, "taux": 6.0},
+      {"seuil": 78000, "taux": 6.5},
+      {"seuil": 84000, "taux": 7.0},
+      {"seuil": 90000, "taux": 7.5},
+      {"seuil": 96000, "taux": 8.0},
+      {"seuil": 102000, "taux": 8.5},
+      {"seuil": 108000, "taux": 9.0},
+      {"seuil": 114000, "taux": 9.5},
+      {"seuil": 120000, "taux": 10.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 20000, "taux": 0.0},
+      {"seuil": 26000, "taux": 0.5},
+      {"seuil": 32000, "taux": 1.0},
+      {"seuil": 38000, "taux": 1.5},
+      {"seuil": 44000, "taux": 2.0},
+      {"seuil": 50000, "taux": 2.5},
+      {"seuil": 56000, "taux": 3.0},
+      {"seuil": 62000, "taux": 3.5},
+      {"seuil": 68000, "taux": 4.0},
+      {"seuil": 74000, "taux": 4.5},
+      {"seuil": 80000, "taux": 5.0},
+      {"seuil": 86000, "taux": 5.5},
+      {"seuil": 92000, "taux": 6.0},
+      {"seuil": 98000, "taux": 6.5},
+      {"seuil": 104000, "taux": 7.0},
+      {"seuil": 110000, "taux": 7.5},
+      {"seuil": 116000, "taux": 8.0},
+      {"seuil": 122000, "taux": 8.5},
+      {"seuil": 128000, "taux": 9.0},
+      {"seuil": 134000, "taux": 9.5},
+      {"seuil": 140000, "taux": 10.0}
+    ]
+  },
+    "FR": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 8700, "taux": 0.0},
+      {"seuil": 11700, "taux": 0.5},
+      {"seuil": 15300, "taux": 1.0},
+      {"seuil": 19500, "taux": 1.5},
+      {"seuil": 23700, "taux": 2.0},
+      {"seuil": 28200, "taux": 2.5},
+      {"seuil": 33000, "taux": 3.0},
+      {"seuil": 38100, "taux": 3.5},
+      {"seuil": 43500, "taux": 4.0},
+      {"seuil": 49200, "taux": 4.5},
+      {"seuil": 55200, "taux": 5.0},
+      {"seuil": 61500, "taux": 5.5},
+      {"seuil": 68100, "taux": 6.0},
+      {"seuil": 75000, "taux": 6.5},
+      {"seuil": 82200, "taux": 7.0},
+      {"seuil": 89700, "taux": 7.5},
+      {"seuil": 97500, "taux": 8.0},
+      {"seuil": 105600, "taux": 8.5},
+      {"seuil": 114000, "taux": 9.0},
+      {"seuil": 122700, "taux": 9.5},
+      {"seuil": 131700, "taux": 10.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 17400, "taux": 0.0},
+      {"seuil": 22200, "taux": 0.5},
+      {"seuil": 27600, "taux": 1.0},
+      {"seuil": 33600, "taux": 1.5},
+      {"seuil": 40200, "taux": 2.0},
+      {"seuil": 47400, "taux": 2.5},
+      {"seuil": 55200, "taux": 3.0},
+      {"seuil": 63600, "taux": 3.5},
+      {"seuil": 72600, "taux": 4.0},
+      {"seuil": 82200, "taux": 4.5},
+      {"seuil": 92400, "taux": 5.0},
+      {"seuil": 103200, "taux": 5.5},
+      {"seuil": 114600, "taux": 6.0},
+      {"seuil": 126600, "taux": 6.5},
+      {"seuil": 139200, "taux": 7.0},
+      {"seuil": 152400, "taux": 7.5},
+      {"seuil": 166200, "taux": 8.0},
+      {"seuil": 180600, "taux": 8.5},
+      {"seuil": 195600, "taux": 9.0},
+      {"seuil": 211200, "taux": 9.5},
+      {"seuil": 227400, "taux": 10.0}
+    ]
+  },
+    "GE": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 14000, "taux": 0.0},
+      {"seuil": 18000, "taux": 1.0},
+      {"seuil": 22000, "taux": 2.0},
+      {"seuil": 26000, "taux": 3.0},
+      {"seuil": 30000, "taux": 4.0},
+      {"seuil": 34000, "taux": 5.0},
+      {"seuil": 38000, "taux": 6.0},
+      {"seuil": 42000, "taux": 7.0},
+      {"seuil": 46000, "taux": 8.0},
+      {"seuil": 50000, "taux": 9.0},
+      {"seuil": 54000, "taux": 10.0},
+      {"seuil": 58000, "taux": 11.0},
+      {"seuil": 62000, "taux": 12.0},
+      {"seuil": 66000, "taux": 13.0},
+      {"seuil": 70000, "taux": 14.0},
+      {"seuil": 74000, "taux": 15.0},
+      {"seuil": 78000, "taux": 16.0},
+      {"seuil": 82000, "taux": 17.0},
+      {"seuil": 86000, "taux": 18.0},
+      {"seuil": 90000, "taux": 19.0},
+      {"seuil": 94000, "taux": 20.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 28000, "taux": 0.0},
+      {"seuil": 34000, "taux": 1.0},
+      {"seuil": 40000, "taux": 2.0},
+      {"seuil": 46000, "taux": 3.0},
+      {"seuil": 52000, "taux": 4.0},
+      {"seuil": 58000, "taux": 5.0},
+      {"seuil": 64000, "taux": 6.0},
+      {"seuil": 70000, "taux": 7.0},
+      {"seuil": 76000, "taux": 8.0},
+      {"seuil": 82000, "taux": 9.0},
+      {"seuil": 88000, "taux": 10.0},
+      {"seuil": 94000, "taux": 11.0},
+      {"seuil": 100000, "taux": 12.0},
+      {"seuil": 106000, "taux": 13.0},
+      {"seuil": 112000, "taux": 14.0},
+      {"seuil": 118000, "taux": 15.0},
+      {"seuil": 124000, "taux": 16.0},
+      {"seuil": 130000, "taux": 17.0},
+      {"seuil": 136000, "taux": 18.0},
+      {"seuil": 142000, "taux": 19.0},
+      {"seuil": 148000, "taux": 20.0}
+    ]
+  },
+    "GL": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 6000, "taux": 0.0},
+      {"seuil": 12000, "taux": 0.5},
+      {"seuil": 18000, "taux": 1.0},
+      {"seuil": 24000, "taux": 1.5},
+      {"seuil": 30000, "taux": 2.0},
+      {"seuil": 36000, "taux": 2.5},
+      {"seuil": 42000, "taux": 3.0},
+      {"seuil": 48000, "taux": 3.5},
+      {"seuil": 54000, "taux": 4.0},
+      {"seuil": 60000, "taux": 4.5},
+      {"seuil": 66000, "taux": 5.0},
+      {"seuil": 72000, "taux": 5.5},
+      {"seuil": 78000, "taux": 6.0},
+      {"seuil": 84000, "taux": 6.5},
+      {"seuil": 90000, "taux": 7.0},
+      {"seuil": 96000, "taux": 7.5},
+      {"seuil": 102000, "taux": 8.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 12000, "taux": 0.0},
+      {"seuil": 18000, "taux": 0.5},
+      {"seuil": 24000, "taux": 1.0},
+      {"seuil": 30000, "taux": 1.5},
+      {"seuil": 36000, "taux": 2.0},
+      {"seuil": 42000, "taux": 2.5},
+      {"seuil": 48000, "taux": 3.0},
+      {"seuil": 54000, "taux": 3.5},
+      {"seuil": 60000, "taux": 4.0},
+      {"seuil": 66000, "taux": 4.5},
+      {"seuil": 72000, "taux": 5.0},
+      {"seuil": 78000, "taux": 5.5},
+      {"seuil": 84000, "taux": 6.0},
+      {"seuil": 90000, "taux": 6.5},
+      {"seuil": 96000, "taux": 7.0},
+      {"seuil": 102000, "taux": 7.5},
+      {"seuil": 108000, "taux": 8.0}
+    ]
+  },
+    "GR": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 10000, "taux": 0.0},
+      {"seuil": 14000, "taux": 0.3},
+      {"seuil": 18000, "taux": 0.6},
+      {"seuil": 22000, "taux": 0.9},
+      {"seuil": 26000, "taux": 1.2},
+      {"seuil": 30000, "taux": 1.5},
+      {"seuil": 34000, "taux": 1.8},
+      {"seuil": 38000, "taux": 2.1},
+      {"seuil": 42000, "taux": 2.4},
+      {"seuil": 46000, "taux": 2.7},
+      {"seuil": 50000, "taux": 3.0},
+      {"seuil": 54000, "taux": 3.3},
+      {"seuil": 58000, "taux": 3.6},
+      {"seuil": 62000, "taux": 3.9},
+      {"seuil": 66000, "taux": 4.2},
+      {"seuil": 70000, "taux": 4.5},
+      {"seuil": 74000, "taux": 4.8},
+      {"seuil": 78000, "taux": 5.1},
+      {"seuil": 82000, "taux": 5.4},
+      {"seuil": 86000, "taux": 5.7},
+      {"seuil": 90000, "taux": 6.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 20000, "taux": 0.0},
+      {"seuil": 26000, "taux": 0.3},
+      {"seuil": 32000, "taux": 0.6},
+      {"seuil": 38000, "taux": 0.9},
+      {"seuil": 44000, "taux": 1.2},
+      {"seuil": 50000, "taux": 1.5},
+      {"seuil": 56000, "taux": 1.8},
+      {"seuil": 62000, "taux": 2.1},
+      {"seuil": 68000, "taux": 2.4},
+      {"seuil": 74000, "taux": 2.7},
+      {"seuil": 80000, "taux": 3.0},
+      {"seuil": 86000, "taux": 3.3},
+      {"seuil": 92000, "taux": 3.6},
+      {"seuil": 98000, "taux": 3.9},
+      {"seuil": 104000, "taux": 4.2},
+      {"seuil": 110000, "taux": 4.5},
+      {"seuil": 116000, "taux": 4.8},
+      {"seuil": 122000, "taux": 5.1},
+      {"seuil": 128000, "taux": 5.4},
+      {"seuil": 134000, "taux": 5.7},
+      {"seuil": 140000, "taux": 6.0}
+    ]
+  },
+    "JU": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 10000, "taux": 0.0},
+      {"seuil": 13000, "taux": 0.5},
+      {"seuil": 16000, "taux": 1.0},
+      {"seuil": 19000, "taux": 1.5},
+      {"seuil": 22000, "taux": 2.0},
+      {"seuil": 25000, "taux": 2.5},
+      {"seuil": 28000, "taux": 3.0},
+      {"seuil": 31000, "taux": 3.5},
+      {"seuil": 34000, "taux": 4.0},
+      {"seuil": 37000, "taux": 4.5},
+      {"seuil": 40000, "taux": 5.0},
+      {"seuil": 43000, "taux": 5.5},
+      {"seuil": 46000, "taux": 6.0},
+      {"seuil": 49000, "taux": 6.5},
+      {"seuil": 52000, "taux": 7.0},
+      {"seuil": 55000, "taux": 7.5},
+      {"seuil": 58000, "taux": 8.0},
+      {"seuil": 61000, "taux": 8.5},
+      {"seuil": 64000, "taux": 9.0},
+      {"seuil": 67000, "taux": 9.5},
+      {"seuil": 70000, "taux": 10.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 20000, "taux": 0.0},
+      {"seuil": 24000, "taux": 0.5},
+      {"seuil": 28000, "taux": 1.0},
+      {"seuil": 32000, "taux": 1.5},
+      {"seuil": 36000, "taux": 2.0},
+      {"seuil": 40000, "taux": 2.5},
+      {"seuil": 44000, "taux": 3.0},
+      {"seuil": 48000, "taux": 3.5},
+      {"seuil": 52000, "taux": 4.0},
+      {"seuil": 56000, "taux": 4.5},
+      {"seuil": 60000, "taux": 5.0},
+      {"seuil": 64000, "taux": 5.5},
+      {"seuil": 68000, "taux": 6.0},
+      {"seuil": 72000, "taux": 6.5},
+      {"seuil": 76000, "taux": 7.0},
+      {"seuil": 80000, "taux": 7.5},
+      {"seuil": 84000, "taux": 8.0},
+      {"seuil": 88000, "taux": 8.5},
+      {"seuil": 92000, "taux": 9.0},
+      {"seuil": 96000, "taux": 9.5},
+      {"seuil": 100000, "taux": 10.0}
+    ]
+  },
+    "LU": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 9000, "taux": 0.0},
+      {"seuil": 13000, "taux": 0.25},
+      {"seuil": 17000, "taux": 0.5},
+      {"seuil": 21000, "taux": 0.75},
+      {"seuil": 25000, "taux": 1.0},
+      {"seuil": 29000, "taux": 1.25},
+      {"seuil": 33000, "taux": 1.5},
+      {"seuil": 37000, "taux": 1.75},
+      {"seuil": 41000, "taux": 2.0},
+      {"seuil": 45000, "taux": 2.25},
+      {"seuil": 49000, "taux": 2.5},
+      {"seuil": 53000, "taux": 2.75},
+      {"seuil": 57000, "taux": 3.0},
+      {"seuil": 61000, "taux": 3.25},
+      {"seuil": 65000, "taux": 3.5},
+      {"seuil": 69000, "taux": 3.75},
+      {"seuil": 73000, "taux": 4.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 18000, "taux": 0.0},
+      {"seuil": 23000, "taux": 0.25},
+      {"seuil": 28000, "taux": 0.5},
+      {"seuil": 33000, "taux": 0.75},
+      {"seuil": 38000, "taux": 1.0},
+      {"seuil": 43000, "taux": 1.25},
+      {"seuil": 48000, "taux": 1.5},
+      {"seuil": 53000, "taux": 1.75},
+      {"seuil": 58000, "taux": 2.0},
+      {"seuil": 63000, "taux": 2.25},
+      {"seuil": 68000, "taux": 2.5},
+      {"seuil": 73000, "taux": 2.75},
+      {"seuil": 78000, "taux": 3.0},
+      {"seuil": 83000, "taux": 3.25},
+      {"seuil": 88000, "taux": 3.5},
+      {"seuil": 93000, "taux": 3.75},
+      {"seuil": 98000, "taux": 4.0}
+    ]
+  },
+    "NE": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 10000, "taux": 0.0},
+      {"seuil": 15000, "taux": 0.4},
+      {"seuil": 20000, "taux": 0.8},
+      {"seuil": 25000, "taux": 1.2},
+      {"seuil": 30000, "taux": 1.6},
+      {"seuil": 35000, "taux": 2.0},
+      {"seuil": 40000, "taux": 2.4},
+      {"seuil": 45000, "taux": 2.8},
+      {"seuil": 50000, "taux": 3.2},
+      {"seuil": 55000, "taux": 3.6},
+      {"seuil": 60000, "taux": 4.0},
+      {"seuil": 65000, "taux": 4.4},
+      {"seuil": 70000, "taux": 4.8},
+      {"seuil": 75000, "taux": 5.2},
+      {"seuil": 80000, "taux": 5.6},
+      {"seuil": 85000, "taux": 6.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 20000, "taux": 0.0},
+      {"seuil": 26000, "taux": 0.4},
+      {"seuil": 32000, "taux": 0.8},
+      {"seuil": 38000, "taux": 1.2},
+      {"seuil": 44000, "taux": 1.6},
+      {"seuil": 50000, "taux": 2.0},
+      {"seuil": 56000, "taux": 2.4},
+      {"seuil": 62000, "taux": 2.8},
+      {"seuil": 68000, "taux": 3.2},
+      {"seuil": 74000, "taux": 3.6},
+      {"seuil": 80000, "taux": 4.0},
+      {"seuil": 86000, "taux": 4.4},
+      {"seuil": 92000, "taux": 4.8},
+      {"seuil": 98000, "taux": 5.2},
+      {"seuil": 104000, "taux": 5.6},
+      {"seuil": 110000, "taux": 6.0}
+    ]
+  },
+    "NW": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 8000, "taux": 0.0},
+      {"seuil": 14000, "taux": 0.3},
+      {"seuil": 20000, "taux": 0.6},
+      {"seuil": 26000, "taux": 0.9},
+      {"seuil": 32000, "taux": 1.2},
+      {"seuil": 38000, "taux": 1.5},
+      {"seuil": 44000, "taux": 1.8},
+      {"seuil": 50000, "taux": 2.1},
+      {"seuil": 56000, "taux": 2.4},
+      {"seuil": 62000, "taux": 2.7},
+      {"seuil": 68000, "taux": 3.0},
+      {"seuil": 74000, "taux": 3.3},
+      {"seuil": 80000, "taux": 3.6}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 16000, "taux": 0.0},
+      {"seuil": 22000, "taux": 0.3},
+      {"seuil": 28000, "taux": 0.6},
+      {"seuil": 34000, "taux": 0.9},
+      {"seuil": 40000, "taux": 1.2},
+      {"seuil": 46000, "taux": 1.5},
+      {"seuil": 52000, "taux": 1.8},
+      {"seuil": 58000, "taux": 2.1},
+      {"seuil": 64000, "taux": 2.4},
+      {"seuil": 70000, "taux": 2.7},
+      {"seuil": 76000, "taux": 3.0},
+      {"seuil": 82000, "taux": 3.3},
+      {"seuil": 88000, "taux": 3.6}
+    ]
+  },
+  "OW": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 8000, "taux": 0.0},
+      {"seuil": 14000, "taux": 0.3},
+      {"seuil": 20000, "taux": 0.6},
+      {"seuil": 26000, "taux": 0.9},
+      {"seuil": 32000, "taux": 1.2},
+      {"seuil": 38000, "taux": 1.5},
+      {"seuil": 44000, "taux": 1.8},
+      {"seuil": 50000, "taux": 2.1},
+      {"seuil": 56000, "taux": 2.4},
+      {"seuil": 62000, "taux": 2.7},
+      {"seuil": 68000, "taux": 3.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 16000, "taux": 0.0},
+      {"seuil": 22000, "taux": 0.3},
+      {"seuil": 28000, "taux": 0.6},
+      {"seuil": 34000, "taux": 0.9},
+      {"seuil": 40000, "taux": 1.2},
+      {"seuil": 46000, "taux": 1.5},
+      {"seuil": 52000, "taux": 1.8},
+      {"seuil": 58000, "taux": 2.1},
+      {"seuil": 64000, "taux": 2.4},
+      {"seuil": 70000, "taux": 2.7},
+      {"seuil": 76000, "taux": 3.0}
+    ]
+  },
+  "SG": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 10000, "taux": 0.0},
+      {"seuil": 16000, "taux": 0.35},
+      {"seuil": 22000, "taux": 0.7},
+      {"seuil": 28000, "taux": 1.05},
+      {"seuil": 34000, "taux": 1.4},
+      {"seuil": 40000, "taux": 1.75},
+      {"seuil": 46000, "taux": 2.1},
+      {"seuil": 52000, "taux": 2.45},
+      {"seuil": 58000, "taux": 2.8},
+      {"seuil": 64000, "taux": 3.15},
+      {"seuil": 70000, "taux": 3.5},
+      {"seuil": 76000, "taux": 3.85},
+      {"seuil": 82000, "taux": 4.2}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 20000, "taux": 0.0},
+      {"seuil": 26000, "taux": 0.35},
+      {"seuil": 32000, "taux": 0.7},
+      {"seuil": 38000, "taux": 1.05},
+      {"seuil": 44000, "taux": 1.4},
+      {"seuil": 50000, "taux": 1.75},
+      {"seuil": 56000, "taux": 2.1},
+      {"seuil": 62000, "taux": 2.45},
+      {"seuil": 68000, "taux": 2.8},
+      {"seuil": 74000, "taux": 3.15},
+      {"seuil": 80000, "taux": 3.5},
+      {"seuil": 86000, "taux": 3.85},
+      {"seuil": 92000, "taux": 4.2}
+    ]
+  },
+    "SH": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 9000, "taux": 0.0},
+      {"seuil": 15000, "taux": 0.3},
+      {"seuil": 21000, "taux": 0.6},
+      {"seuil": 27000, "taux": 0.9},
+      {"seuil": 33000, "taux": 1.2},
+      {"seuil": 39000, "taux": 1.5},
+      {"seuil": 45000, "taux": 1.8},
+      {"seuil": 51000, "taux": 2.1},
+      {"seuil": 57000, "taux": 2.4},
+      {"seuil": 63000, "taux": 2.7},
+      {"seuil": 69000, "taux": 3.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 18000, "taux": 0.0},
+      {"seuil": 24000, "taux": 0.3},
+      {"seuil": 30000, "taux": 0.6},
+      {"seuil": 36000, "taux": 0.9},
+      {"seuil": 42000, "taux": 1.2},
+      {"seuil": 48000, "taux": 1.5},
+      {"seuil": 54000, "taux": 1.8},
+      {"seuil": 60000, "taux": 2.1},
+      {"seuil": 66000, "taux": 2.4},
+      {"seuil": 72000, "taux": 2.7},
+      {"seuil": 78000, "taux": 3.0}
+    ]
+  },
+    "SZ": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 10000, "taux": 0.0},
+      {"seuil": 16000, "taux": 0.4},
+      {"seuil": 22000, "taux": 0.8},
+      {"seuil": 28000, "taux": 1.2},
+      {"seuil": 34000, "taux": 1.6},
+      {"seuil": 40000, "taux": 2.0},
+      {"seuil": 46000, "taux": 2.4},
+      {"seuil": 52000, "taux": 2.8},
+      {"seuil": 58000, "taux": 3.2},
+      {"seuil": 64000, "taux": 3.6},
+      {"seuil": 70000, "taux": 4.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 20000, "taux": 0.0},
+      {"seuil": 26000, "taux": 0.4},
+      {"seuil": 32000, "taux": 0.8},
+      {"seuil": 38000, "taux": 1.2},
+      {"seuil": 44000, "taux": 1.6},
+      {"seuil": 50000, "taux": 2.0},
+      {"seuil": 56000, "taux": 2.4},
+      {"seuil": 62000, "taux": 2.8},
+      {"seuil": 68000, "taux": 3.2},
+      {"seuil": 74000, "taux": 3.6},
+      {"seuil": 80000, "taux": 4.0}
+    ]
+  },
+    "SO": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 10000, "taux": 0.0},
+      {"seuil": 16000, "taux": 0.4},
+      {"seuil": 22000, "taux": 0.8},
+      {"seuil": 28000, "taux": 1.2},
+      {"seuil": 34000, "taux": 1.6},
+      {"seuil": 40000, "taux": 2.0},
+      {"seuil": 46000, "taux": 2.4},
+      {"seuil": 52000, "taux": 2.8},
+      {"seuil": 58000, "taux": 3.2},
+      {"seuil": 64000, "taux": 3.6},
+      {"seuil": 70000, "taux": 4.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 20000, "taux": 0.0},
+      {"seuil": 26000, "taux": 0.4},
+      {"seuil": 32000, "taux": 0.8},
+      {"seuil": 38000, "taux": 1.2},
+      {"seuil": 44000, "taux": 1.6},
+      {"seuil": 50000, "taux": 2.0},
+      {"seuil": 56000, "taux": 2.4},
+      {"seuil": 62000, "taux": 2.8},
+      {"seuil": 68000, "taux": 3.2},
+      {"seuil": 74000, "taux": 3.6},
+      {"seuil": 80000, "taux": 4.0}
+    ]
+  },
+    "TI": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 9000, "taux": 0.0},
+      {"seuil": 15000, "taux": 0.35},
+      {"seuil": 21000, "taux": 0.7},
+      {"seuil": 27000, "taux": 1.05},
+      {"seuil": 33000, "taux": 1.4},
+      {"seuil": 39000, "taux": 1.75},
+      {"seuil": 45000, "taux": 2.1},
+      {"seuil": 51000, "taux": 2.45},
+      {"seuil": 57000, "taux": 2.8},
+      {"seuil": 63000, "taux": 3.15},
+      {"seuil": 69000, "taux": 3.5}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 18000, "taux": 0.0},
+      {"seuil": 24000, "taux": 0.35},
+      {"seuil": 30000, "taux": 0.7},
+      {"seuil": 36000, "taux": 1.05},
+      {"seuil": 42000, "taux": 1.4},
+      {"seuil": 48000, "taux": 1.75},
+      {"seuil": 54000, "taux": 2.1},
+      {"seuil": 60000, "taux": 2.45},
+      {"seuil": 66000, "taux": 2.8},
+      {"seuil": 72000, "taux": 3.15},
+      {"seuil": 78000, "taux": 3.5}
+    ]
+  },
+    "TG": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 9500, "taux": 0.0},
+      {"seuil": 15500, "taux": 0.3},
+      {"seuil": 21500, "taux": 0.6},
+      {"seuil": 27500, "taux": 0.9},
+      {"seuil": 33500, "taux": 1.2},
+      {"seuil": 39500, "taux": 1.5},
+      {"seuil": 45500, "taux": 1.8},
+      {"seuil": 51500, "taux": 2.1},
+      {"seuil": 57500, "taux": 2.4},
+      {"seuil": 63500, "taux": 2.7},
+      {"seuil": 69500, "taux": 3.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 19000, "taux": 0.0},
+      {"seuil": 25000, "taux": 0.3},
+      {"seuil": 31000, "taux": 0.6},
+      {"seuil": 37000, "taux": 0.9},
+      {"seuil": 43000, "taux": 1.2},
+      {"seuil": 49000, "taux": 1.5},
+      {"seuil": 55000, "taux": 1.8},
+      {"seuil": 61000, "taux": 2.1},
+      {"seuil": 67000, "taux": 2.4},
+      {"seuil": 73000, "taux": 2.7},
+      {"seuil": 79000, "taux": 3.0}
+    ]
+  },
+    "UR": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 9500, "taux": 0.0},
+      {"seuil": 15500, "taux": 0.25},
+      {"seuil": 21500, "taux": 0.5},
+      {"seuil": 27500, "taux": 0.75},
+      {"seuil": 33500, "taux": 1.0},
+      {"seuil": 39500, "taux": 1.25},
+      {"seuil": 45500, "taux": 1.5},
+      {"seuil": 51500, "taux": 1.75},
+      {"seuil": 57500, "taux": 2.0},
+      {"seuil": 63500, "taux": 2.25},
+      {"seuil": 69500, "taux": 2.5}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 19000, "taux": 0.0},
+      {"seuil": 25000, "taux": 0.25},
+      {"seuil": 31000, "taux": 0.5},
+      {"seuil": 37000, "taux": 0.75},
+      {"seuil": 43000, "taux": 1.0},
+      {"seuil": 49000, "taux": 1.25},
+      {"seuil": 55000, "taux": 1.5},
+      {"seuil": 61000, "taux": 1.75},
+      {"seuil": 67000, "taux": 2.0},
+      {"seuil": 73000, "taux": 2.25},
+      {"seuil": 79000, "taux": 2.5}
+    ]
+  },
+    "VS": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 8200, "taux": 0.0},
+      {"seuil": 16600, "taux": 0.3},
+      {"seuil": 25000, "taux": 0.6},
+      {"seuil": 33400, "taux": 0.9},
+      {"seuil": 41800, "taux": 1.2},
+      {"seuil": 50200, "taux": 1.5},
+      {"seuil": 58600, "taux": 1.8},
+      {"seuil": 67000, "taux": 2.1},
+      {"seuil": 75400, "taux": 2.4},
+      {"seuil": 83800, "taux": 2.7},
+      {"seuil": 92200, "taux": 3.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 16400, "taux": 0.0},
+      {"seuil": 24800, "taux": 0.3},
+      {"seuil": 33200, "taux": 0.6},
+      {"seuil": 41600, "taux": 0.9},
+      {"seuil": 50000, "taux": 1.2},
+      {"seuil": 58400, "taux": 1.5},
+      {"seuil": 66800, "taux": 1.8},
+      {"seuil": 75200, "taux": 2.1},
+      {"seuil": 83600, "taux": 2.4},
+      {"seuil": 92000, "taux": 2.7},
+      {"seuil": 100400, "taux": 3.0}
+    ]
+  },
+      {"seuil": 20000, "taux": 0.25},
+      {"seuil": 30000, "taux": 0.5},
+      {"seuil": 40000, "taux": 0.75},
+      {"seuil": 50000, "taux": 1.0},
+      {"seuil": 60000, "taux": 1.25},
+      {"seuil": 70000, "taux": 1.5}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 20000, "taux": 0.0},
+      {"seuil": 30000, "taux": 0.25},
+      {"seuil": 40000, "taux": 0.5},
+      {"seuil": 50000, "taux": 0.75},
+      {"seuil": 60000, "taux": 1.0},
+      {"seuil": 70000, "taux": 1.25},
+      {"seuil": 80000, "taux": 1.5}
+    ]
+  },
+  "VD": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 7200, "taux": 0.0},
+      {"seuil": 14400, "taux": 0.2},
+      {"seuil": 21600, "taux": 0.4},
+      {"seuil": 28800, "taux": 0.6},
+      {"seuil": 36000, "taux": 0.8},
+      {"seuil": 43200, "taux": 1.0},
+      {"seuil": 50400, "taux": 1.2},
+      {"seuil": 57600, "taux": 1.4},
+      {"seuil": 64800, "taux": 1.6},
+      {"seuil": 72000, "taux": 1.8}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 14400, "taux": 0.0},
+      {"seuil": 21600, "taux": 0.2},
+      {"seuil": 28800, "taux": 0.4},
+      {"seuil": 36000, "taux": 0.6},
+      {"seuil": 43200, "taux": 0.8},
+      {"seuil": 50400, "taux": 1.0},
+      {"seuil": 57600, "taux": 1.2},
+      {"seuil": 64800, "taux": 1.4},
+      {"seuil": 72000, "taux": 1.6},
+      {"seuil": 79200, "taux": 1.8}
+    ]
+  },
+      {"seuil": 20000, "taux": 0.3},
+      {"seuil": 28000, "taux": 0.6},
+      {"seuil": 36000, "taux": 0.9},
+      {"seuil": 44000, "taux": 1.2},
+      {"seuil": 52000, "taux": 1.5},
+      {"seuil": 60000, "taux": 1.8}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 24000, "taux": 0.0},
+      {"seuil": 32000, "taux": 0.3},
+      {"seuil": 40000, "taux": 0.6},
+      {"seuil": 48000, "taux": 0.9},
+      {"seuil": 56000, "taux": 1.2},
+      {"seuil": 64000, "taux": 1.5},
+      {"seuil": 72000, "taux": 1.8}
+    ]
+  },
+  "ZG": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 15000, "taux": 0.0},
+      {"seuil": 25000, "taux": 0.2},
+      {"seuil": 35000, "taux": 0.4},
+      {"seuil": 45000, "taux": 0.6},
+      {"seuil": 55000, "taux": 0.8},
+      {"seuil": 65000, "taux": 1.0}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 30000, "taux": 0.0},
+      {"seuil": 40000, "taux": 0.2},
+      {"seuil": 50000, "taux": 0.4},
+      {"seuil": 60000, "taux": 0.6},
+      {"seuil": 70000, "taux": 0.8},
+      {"seuil": 80000, "taux": 1.0}
+    ]
+  },
+  "ZH": {
+    "Personne vivant seule, sans enfant": [
+      {"seuil": 10000, "taux": 0.0},
+      {"seuil": 20000, "taux": 0.35},
+      {"seuil": 30000, "taux": 0.7},
+      {"seuil": 40000, "taux": 1.05},
+      {"seuil": 50000, "taux": 1.4},
+      {"seuil": 60000, "taux": 1.75},
+      {"seuil": 70000, "taux": 2.1}
+    ],
+    "Personne mariée / vivant seule, avec enfant": [
+      {"seuil": 20000, "taux": 0.0},
+      {"seuil": 30000, "taux": 0.35},
+      {"seuil": 40000, "taux": 0.7},
+      {"seuil": 50000, "taux": 1.05},
+      {"seuil": 60000, "taux": 1.4},
+      {"seuil": 70000, "taux": 1.75},
+      {"seuil": 80000, "taux": 2.1}
+      
