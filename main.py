@@ -18,5 +18,5 @@ religion = st.selectbox("Affiliation religieuse", ["Aucune", "Catholique", "Prot
 
 # Bouton de calcul
 if st.button("Calculer l'économie d’impôt"):
-economie = calculer_economie(revenu, versement, statut, enfants, npa, religion)
+    economie = calculer_economie(revenu, versement, statut, enfants, npa, religion)
     st.success(f"Économie estimée : CHF {economie:,.2f}")
