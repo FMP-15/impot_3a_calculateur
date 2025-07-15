@@ -816,7 +816,7 @@
       {"seuil": 44000, "taux": 1.2},
       {"seuil": 52000, "taux": 1.5},
       {"seuil": 60000, "taux": 1.8}
-    ],
+    ]
     "Personne mariée / vivant seule, avec enfant": [
       {"seuil": 24000, "taux": 0.0},
       {"seuil": 32000, "taux": 0.3},
@@ -862,5 +862,7 @@
       {"seuil": 50000, "taux": 1.05},
       {"seuil": 60000, "taux": 1.4},
       {"seuil": 70000, "taux": 1.75},
-      {"seuil": 80000, "taux": 2.1}
-      
+      {"seuil": 80000, "taux": 2.1} 
+  ]
+  }
+}
