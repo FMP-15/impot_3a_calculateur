@@ -1,74 +1,63 @@
 import json
-import os
 
-# ---------- Chargement des données ----------
+def charger_baremes():
+    with open("data/bareme_confederation.json", encoding="utf-8") as f:
+        conf = json.load(f)
+    with open("data/baremes_cantonaux.json", encoding="utf-8") as f:
+        cantons = json.load(f)
+    with open("data/baremes_communes.json", encoding="utf-8") as f:
+        communes = json.load(f)
+    return conf, cantons, communes
 
-def charger_bareme_federal():
-    chemin = os.path.join("data", "bareme_confederation.json")
-    with open(chemin, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-def charger_communes():
-    chemin = os.path.join("data", "baremes_communes.json")
-    with open(chemin, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-# ---------- Détermination de la catégorie fiscale ----------
-
-def determiner_categorie_fiscale(statut, enfants):
-    if enfants >= 1 or statut.lower() == "marié":
-        return "Personne mariée / vivant seule, avec enfant"
-    else:
-        return "Personne vivant seule, sans enfant"
-
-# ---------- Calcul progressif de l'impôt fédéral ----------
-
-def calculer_impot_federal(revenu_imposable, barème):
+def appliquer_bareme(bareme, revenu_imposable):
     impot = 0
-    for tranche in barème:
-        if revenu_imposable >= tranche["revenu_min"]:
-            taux = tranche["taux"] / 100
-            base = tranche["base"]
-            impot = base + (revenu_imposable - tranche["revenu_min"]) * taux
+    precedent = 0
+    for tranche in bareme:
+        seuil = tranche["seuil"]
+        taux = tranche["taux"] / 100
+        if revenu_imposable > seuil:
+            impot += (seuil - precedent) * taux
+            precedent = seuil
         else:
+            impot += (revenu_imposable - precedent) * taux
             break
-    return impot
+    return round(impot, 2)
 
-# ---------- Fonction principale ----------
+def trouver_canton_et_taux(communes_data, npa, religion):
+    entree = communes_data.get(str(npa))
+    if not entree:
+        return None, 0.0, 0.0
+    canton = entree["canton"]
+    communal = entree.get("taux_communal", 0.0)
+    religieux = entree.get("taux_religion", {}).get(religion, 0.0)
+    return canton, communal, religieux
 
-def calculer_economie(revenu, versement_3a, statut, enfants, npa, religion):
-    plafond = 7056  # Plafond 3e pilier A pour salarié en 2025
-    versement_utilisé = min(versement_3a, plafond)
+def calcul_economie(revenu_brut, versement_3a, statut, enfants, npa, religion):
+    conf, cantons, communes = charger_baremes()
 
-    # 1. Chargement des données
-    barèmes = charger_bareme_federal()
-    communes = charger_communes()
+    situation = "Personne vivant seule, sans enfant"
+    if statut == "marie" or enfants > 0:
+        situation = "Personne mariée / vivant seule, avec enfant"
 
-    # 2. Sélection de la situation fiscale
-    categorie = determiner_categorie_fiscale(statut, enfants)
-    barème = barèmes.get(categorie, [])
+    revenu_imposable = revenu_brut - versement_3a
 
-    # 3. Recherche de la commune
-    commune_data = communes.get(str(npa))
-    if not commune_data:
-        return 0  # NPA inconnu → pas d’économie
+    # Barème confédération
+    bareme_conf = conf.get(situation, [])
+    impot_conf = appliquer_bareme(bareme_conf, revenu_brut) - appliquer_bareme(bareme_conf, revenu_imposable)
 
-    taux_communal = commune_data.get("taux_communal", 0)
-    taux_religieux = commune_data.get("religion", {}).get(religion.lower(), 0)
+    # Trouver canton via commune
+    canton, taux_communal, taux_religieux = trouver_canton_et_taux(communes, npa, religion)
+    if not canton:
+        return None
 
-    # 4. Calcul de l'impôt fédéral
-    revenu_avant = revenu
-    revenu_apres = max(0, revenu - versement_utilisé)
+    bareme_canton = cantons.get(canton, {}).get(situation, [])
+    impot_canton = appliquer_bareme(bareme_canton, revenu_brut) - appliquer_bareme(bareme_canton, revenu_imposable)
 
-    impot_avant = calculer_impot_federal(revenu_avant, barème)
-    impot_apres = calculer_impot_federal(revenu_apres, barème)
-    economie_federale = impot_avant - impot_apres
+    # Impôt communal et religieux (calculés proportionnellement à la base cantonale)
+    base_apres_3a = appliquer_bareme(bareme_canton, revenu_imposable)
+    base_avant_3a = appliquer_bareme(bareme_canton, revenu_brut)
+    eco_commune = (base_avant_3a - base_apres_3a) * (taux_communal / 100)
+    eco_religion = (base_avant_3a - base_apres_3a) * (taux_religieux / 100)
 
-    # 5. Calcul communal et religieux (proportionnel au revenu imposable)
-    impot_commun_religion_avant = revenu_avant * (taux_communal + taux_religieux)
-    impot_commun_religion_apres = revenu_apres * (taux_communal + taux_religieux)
-    economie_locale = impot_commun_religion_avant - impot_commun_religion_apres
-
-    # 6. Total
-    economie_totale = economie_federale + economie_locale
-    return round(economie_totale, 2)
+    total_economie = round(impot_conf + impot_canton + eco_commune + eco_religion, 2)
+    return total_economie
