@@ -1,4 +1,5 @@
 import streamlit as st
+from calculs import calculer_economie
 
 st.set_page_config(page_title="Simulateur 3e pilier", page_icon=None)
 
