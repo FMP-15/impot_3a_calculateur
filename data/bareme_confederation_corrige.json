@@ -1,0 +1,82 @@
+{
+  "Personne vivant seule, sans enfant": [
+    {
+      "seuil": 0.0,
+      "taux": 0.0
+    },
+    {
+      "seuil": 15200.0,
+      "taux": 0.77
+    },
+    {
+      "seuil": 33200.0,
+      "taux": 0.88
+    },
+    {
+      "seuil": 43500.0,
+      "taux": 2.64
+    },
+    {
+      "seuil": 58000.0,
+      "taux": 2.97
+    },
+    {
+      "seuil": 76200.0,
+      "taux": 5.94
+    },
+    {
+      "seuil": 103000.0,
+      "taux": 6.6
+    },
+    {
+      "seuil": 134700.0,
+      "taux": 8.8
+    },
+    {
+      "seuil": 176000.0,
+      "taux": 11.0
+    },
+    {
+      "seuil": 755200.0,
+      "taux": 11.5
+    }
+  ],
+  "Personne mariée / vivant seule, avec enfant": [
+    {
+      "seuil": 51000.0,
+      "taux": 1.0
+    },
+    {
+      "seuil": 58200.0,
+      "taux": 2.0
+    },
+    {
+      "seuil": 68300.0,
+      "taux": 3.0
+    },
+    {
+      "seuil": 85700.0,
+      "taux": 4.0
+    },
+    {
+      "seuil": 103100.0,
+      "taux": 5.0
+    },
+    {
+      "seuil": 124200.0,
+      "taux": 6.0
+    },
+    {
+      "seuil": 154600.0,
+      "taux": 7.0
+    },
+    {
+      "seuil": 199600.0,
+      "taux": 8.0
+    },
+    {
+      "seuil": 755200.0,
+      "taux": 9.5
+    }
+  ]
+}
