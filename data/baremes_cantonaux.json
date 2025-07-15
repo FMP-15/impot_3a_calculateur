@@ -773,7 +773,7 @@
       {"seuil": 50000, "taux": 1.0},
       {"seuil": 60000, "taux": 1.25},
       {"seuil": 70000, "taux": 1.5}
-    ],
+    ]
     "Personne mariée / vivant seule, avec enfant": [
       {"seuil": 20000, "taux": 0.0},
       {"seuil": 30000, "taux": 0.25},
@@ -796,7 +796,7 @@
       {"seuil": 57600, "taux": 1.4},
       {"seuil": 64800, "taux": 1.6},
       {"seuil": 72000, "taux": 1.8}
-    ],
+    ]
     "Personne mariée / vivant seule, avec enfant": [
       {"seuil": 14400, "taux": 0.0},
       {"seuil": 21600, "taux": 0.2},
@@ -809,7 +809,7 @@
       {"seuil": 72000, "taux": 1.6},
       {"seuil": 79200, "taux": 1.8}
     ]
-  },
+  }
       {"seuil": 20000, "taux": 0.3},
       {"seuil": 28000, "taux": 0.6},
       {"seuil": 36000, "taux": 0.9},
