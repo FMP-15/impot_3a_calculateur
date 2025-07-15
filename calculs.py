@@ -9,55 +9,58 @@ def charger_baremes():
         communes = json.load(f)
     return conf, cantons, communes
 
-def appliquer_bareme(bareme, revenu_imposable):
+def appliquer_bareme(bareme, revenu):
     impot = 0
     precedent = 0
     for tranche in bareme:
         seuil = tranche["seuil"]
         taux = tranche["taux"] / 100
-        if revenu_imposable > seuil:
+        if revenu > seuil:
             impot += (seuil - precedent) * taux
             precedent = seuil
         else:
-            impot += (revenu_imposable - precedent) * taux
+            impot += (revenu - precedent) * taux
             break
     return round(impot, 2)
 
-def trouver_canton_et_taux(communes_data, npa, religion):
-    entree = communes_data.get(str(npa))
-    if not entree:
-        return None, 0.0, 0.0
-    canton = entree["canton"]
-    communal = entree.get("taux_communal", 0.0)
-    religieux = entree.get("taux_religion", {}).get(religion, 0.0)
-    return canton, communal, religieux
+def trouver_commune_et_canton(communes_data, npa, religion):
+    commune_data = communes_data.get(str(npa))
+    if not commune_data:
+        return None, None, 0.0, 0.0
+    canton = commune_data["canton"]
+    taux_communal = commune_data.get("taux_communal", 0.0)
+    taux_religion = commune_data.get("taux_religion", {}).get(religion.lower(), 0.0)
+    return commune_data["commune"], canton, taux_communal, taux_religion
 
 def calcul_economie(revenu_brut, versement_3a, statut, enfants, npa, religion):
     conf, cantons, communes = charger_baremes()
 
     situation = "Personne vivant seule, sans enfant"
-    if statut == "marie" or enfants > 0:
+    if statut == "marié" or enfants > 0:
         situation = "Personne mariée / vivant seule, avec enfant"
 
-    revenu_imposable = revenu_brut - versement_3a
+    revenu_imposable = max(0, revenu_brut - versement_3a)
 
-    # Barème confédération
-    bareme_conf = conf.get(situation, [])
-    impot_conf = appliquer_bareme(bareme_conf, revenu_brut) - appliquer_bareme(bareme_conf, revenu_imposable)
-
-    # Trouver canton via commune
-    canton, taux_communal, taux_religieux = trouver_canton_et_taux(communes, npa, religion)
+    # Recherche des barèmes selon le NPA
+    commune, canton, taux_communal, taux_religion = trouver_commune_et_canton(communes, npa, religion)
     if not canton:
         return None
 
+    # Barème Confédération
+    bareme_conf = conf.get(situation, [])
+    impot_conf_avant = appliquer_bareme(bareme_conf, revenu_brut)
+    impot_conf_apres = appliquer_bareme(bareme_conf, revenu_imposable)
+    economie_conf = impot_conf_avant - impot_conf_apres
+
+    # Barème Canton
     bareme_canton = cantons.get(canton, {}).get(situation, [])
-    impot_canton = appliquer_bareme(bareme_canton, revenu_brut) - appliquer_bareme(bareme_canton, revenu_imposable)
+    impot_cantonal_avant = appliquer_bareme(bareme_canton, revenu_brut)
+    impot_cantonal_apres = appliquer_bareme(bareme_canton, revenu_imposable)
+    economie_canton = impot_cantonal_avant - impot_cantonal_apres
 
-    # Impôt communal et religieux (calculés proportionnellement à la base cantonale)
-    base_apres_3a = appliquer_bareme(bareme_canton, revenu_imposable)
-    base_avant_3a = appliquer_bareme(bareme_canton, revenu_brut)
-    eco_commune = (base_avant_3a - base_apres_3a) * (taux_communal / 100)
-    eco_religion = (base_avant_3a - base_apres_3a) * (taux_religieux / 100)
+    # Barème Commune et Religion (sur base cantonale)
+    economie_commune = economie_canton * (taux_communal / 100)
+    economie_religion = economie_canton * (taux_religion / 100)
 
-    total_economie = round(impot_conf + impot_canton + eco_commune + eco_religion, 2)
+    total_economie = round(economie_conf + economie_canton + economie_commune + economie_religion, 2)
     return total_economie
