@@ -773,7 +773,7 @@
       {"seuil": 50000, "taux": 1.0},
       {"seuil": 60000, "taux": 1.25},
       {"seuil": 70000, "taux": 1.5}
-    ]
+    ],
     "Personne mariée / vivant seule, avec enfant": [
       {"seuil": 20000, "taux": 0.0},
       {"seuil": 30000, "taux": 0.25},
