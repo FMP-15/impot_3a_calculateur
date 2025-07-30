@@ -3,10 +3,9 @@ import json
 import os
 from calculs import calculer_impot
 
-# Dossier où se trouvent les fichiers JSON
+# --- Chargement des fichiers JSON ---
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
-# Chargement des barèmes
 with open(os.path.join(DATA_DIR, "baremes_communes.json"), "r", encoding="utf-8") as f:
     communes_data = json.load(f)
 
@@ -16,7 +15,7 @@ with open(os.path.join(DATA_DIR, "baremes_cantonaux.json"), "r", encoding="utf-8
 with open(os.path.join(DATA_DIR, "bareme_confederation.json"), "r", encoding="utf-8") as f:
     confederation_data = json.load(f)
 
-# --- Interface Streamlit ---
+# --- Interface utilisateur ---
 st.title("💼 Calculateur d’économie d’impôt 3ème pilier (3A)")
 
 col1, col2 = st.columns(2)
@@ -25,19 +24,22 @@ with col1:
     revenu = st.number_input("Revenu imposable net (CHF)", min_value=0, value=80000, step=1000)
 with col2:
     versement_3a = st.number_input("Montant 3ème pilier (CHF)", min_value=0, value=7056, step=100)
-    situation = st.selectbox("Situation familiale", [
-        "célibataire_sans_enfant", "célibataire_avec_enfant",
-        "marié_sans_enfant", "marié_avec_enfant"
-    ])
+
+etat_civil = st.selectbox("État civil", ["célibataire", "marié"])
+avec_enfant = st.checkbox("Avec enfant(s)", value=False)
+
+situation_familiale = f"{etat_civil}_{'avec_enfant' if avec_enfant else 'sans_enfant'}"
+
 religion = st.radio("Appartenance religieuse", ["aucune", "catholique", "réformée", "chrétienne"], index=0)
 
+# --- Lancement du calcul ---
 if st.button("Calculer l’économie d’impôt"):
     try:
         resultat = calculer_impot(
             revenu=revenu,
             versement_3a=versement_3a,
             npa=int(npa),
-            situation_familiale=situation,
+            situation_familiale=situation_familiale,
             religion=religion,
             communes_data=communes_data,
             cantonaux_data=cantonaux_data,
