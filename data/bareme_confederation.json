@@ -1,0 +1,120 @@
+{
+  "Confédération": {
+    "Personne mariée / vivant seule, avec enfant": [
+      {
+        "revenu": 0,
+        "taux": 0.0
+      },
+      {
+        "revenu": 29700,
+        "taux": 1.0
+      },
+      {
+        "revenu": 53400,
+        "taux": 2.0
+      },
+      {
+        "revenu": 61300,
+        "taux": 3.0
+      },
+      {
+        "revenu": 79100,
+        "taux": 4.0
+      },
+      {
+        "revenu": 94900,
+        "taux": 5.0
+      },
+      {
+        "revenu": 108600,
+        "taux": 6.0
+      },
+      {
+        "revenu": 120500,
+        "taux": 7.0
+      },
+      {
+        "revenu": 130500,
+        "taux": 8.0
+      },
+      {
+        "revenu": 138300,
+        "taux": 9.0
+      },
+      {
+        "revenu": 144200,
+        "taux": 10.0
+      },
+      {
+        "revenu": 148200,
+        "taux": 11.0
+      },
+      {
+        "revenu": 150300,
+        "taux": 12.0
+      },
+      {
+        "revenu": 152300,
+        "taux": 13.0
+      },
+      {
+        "revenu": 940800,
+        "taux": 13.0
+      },
+      {
+        "revenu": 940900,
+        "taux": 11.5
+      }
+    ],
+    "Personne vivant seule, sans enfant": [
+      {
+        "revenu": 0,
+        "taux": 0.0
+      },
+      {
+        "revenu": 15200,
+        "taux": 0.77
+      },
+      {
+        "revenu": 33200,
+        "taux": 0.88
+      },
+      {
+        "revenu": 43500,
+        "taux": 2.64
+      },
+      {
+        "revenu": 58000,
+        "taux": 2.9699999999999998
+      },
+      {
+        "revenu": 76100,
+        "taux": 5.9399999999999995
+      },
+      {
+        "revenu": 82000,
+        "taux": 6.6
+      },
+      {
+        "revenu": 108800,
+        "taux": 8.8
+      },
+      {
+        "revenu": 141500,
+        "taux": 11.0
+      },
+      {
+        "revenu": 184900,
+        "taux": 13.2
+      },
+      {
+        "revenu": 793300,
+        "taux": 13.2
+      },
+      {
+        "revenu": 793400,
+        "taux": 11.5
+      }
+    ]
+  }
+}
