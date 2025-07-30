@@ -1,19 +1,23 @@
 import streamlit as st
 import json
+import os
 from calculs import calculer_impot
 
+# Dossier où se trouvent les fichiers JSON
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+
 # Chargement des barèmes
-with open("baremes_communes.json", "r", encoding="utf-8") as f:
+with open(os.path.join(DATA_DIR, "baremes_communes.json"), "r", encoding="utf-8") as f:
     communes_data = json.load(f)
 
-with open("baremes_cantonaux.json", "r", encoding="utf-8") as f:
+with open(os.path.join(DATA_DIR, "baremes_cantonaux.json"), "r", encoding="utf-8") as f:
     cantonaux_data = json.load(f)
 
-with open("bareme_confederation.json", "r", encoding="utf-8") as f:
+with open(os.path.join(DATA_DIR, "bareme_confederation.json"), "r", encoding="utf-8") as f:
     confederation_data = json.load(f)
 
-# --- UI ---
-st.title("Calculateur d’économie d’impôt 3ème pilier (3A)")
+# --- Interface Streamlit ---
+st.title("💼 Calculateur d’économie d’impôt 3ème pilier (3A)")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -41,9 +45,9 @@ if st.button("Calculer l’économie d’impôt"):
         )
 
         st.success("Résultats du calcul")
-        st.write(f"💼 Impôt sans 3A : **CHF {resultat['impot_sans_3a']:.2f}**")
-        st.write(f"🏦 Impôt avec 3A : **CHF {resultat['impot_avec_3a']:.2f}**")
-        st.write(f"📉 Économie d’impôt : **CHF {resultat['economie_impot']:.2f}**")
+        st.markdown(f"- 💼 **Impôt sans 3A** : CHF **{resultat['impot_sans_3a']:.2f}**")
+        st.markdown(f"- 🏦 **Impôt avec 3A** : CHF **{resultat['impot_avec_3a']:.2f}**")
+        st.markdown(f"- 📉 **Économie d’impôt** : CHF **{resultat['economie_impot']:.2f}**")
 
     except Exception as e:
         st.error(f"Erreur : {e}")
