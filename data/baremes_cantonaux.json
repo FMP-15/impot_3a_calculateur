@@ -1,0 +1,148 @@
+{
+  "BE": {
+    "célibataire_avec_enfant": [
+      { "tranche": 3300, "taux": 1.55 },
+      { "tranche": 3300, "taux": 1.65 },
+      { "tranche": 9800, "taux": 2.85 },
+      { "tranche": 16000, "taux": 3.65 },
+      { "tranche": 26700, "taux": 3.8 },
+      { "tranche": 26700, "taux": 4.3 },
+      { "tranche": 26700, "taux": 4.85 },
+      { "tranche": 26700, "taux": 5.2 },
+      { "tranche": 41400, "taux": 5.7 },
+      { "tranche": 54000, "taux": 5.85 },
+      { "tranche": 54000, "taux": 5.95 },
+      { "tranche": 54000, "taux": 6.2 },
+      { "tranche": 140400, "taux": 6.4 },
+      { "tranche": 999999999, "taux": 6.5 }
+    ],
+    "célibataire_sans_enfant": [
+      { "tranche": 26700, "taux": 4.45 },
+      { "tranche": 26700, "taux": 5.0 },
+      { "tranche": 26700, "taux": 5.6 },
+      { "tranche": 26700, "taux": 5.75 },
+      { "tranche": 26700, "taux": 5.9 },
+      { "tranche": 26700, "taux": 6.05 },
+      { "tranche": 37400, "taux": 6.15 },
+      { "tranche": 86400, "taux": 6.3 },
+      { "tranche": 151200, "taux": 6.4 },
+      { "tranche": 999999999, "taux": 6.5 }
+    ]
+  },
+  "FR": {
+    "célibataire_avec_enfant": [
+      { "tranche": 0, "taux": 0.0 },
+      { "tranche": 5199, "taux": 0.0 },
+      { "tranche": 5200, "taux": 1.0 },
+      { "tranche": 10500, "taux": 1.0 },
+      { "tranche": 35000, "taux": 4.1745 },
+      { "tranche": 62800, "taux": 6.2139 },
+      { "tranche": 96600, "taux": 8.0352 },
+      { "tranche": 127600, "taux": 9.1042 },
+      { "tranche": 155200, "taux": 9.9846 },
+      { "tranche": 204200, "taux": 10.8662 },
+      { "tranche": 257400, "taux": 11.7172 },
+      { "tranche": 312000, "taux": 12.5355 },
+      { "tranche": 362000, "taux": 13.1097 },
+      { "tranche": 414200, "taux": 13.5 }
+    ],
+    "célibataire_sans_enfant": [
+      { "tranche": 31400, "taux": 6.2139 },
+      { "tranche": 48300, "taux": 8.0352 },
+      { "tranche": 63800, "taux": 9.1042 },
+      { "tranche": 77600, "taux": 9.9846 },
+      { "tranche": 102100, "taux": 10.8662 },
+      { "tranche": 128700, "taux": 11.7172 },
+      { "tranche": 156000, "taux": 12.5355 },
+      { "tranche": 181000, "taux": 13.1097 },
+      { "tranche": 207100, "taux": 13.5 }
+    ]
+  },
+  "GE": {
+    "tous": [
+      { "tranche": 26718, "taux": 11.0, "impot_cumule": 725.85 },
+      { "tranche": 28944, "taux": 12.0, "impot_cumule": 970.7 },
+      { "tranche": 34510, "taux": 13.0, "impot_cumule": 1638.65 },
+      { "tranche": 38963, "taux": 14.0, "impot_cumule": 2217.5 },
+      { "tranche": 43417, "taux": 14.5, "impot_cumule": 2841.1 },
+      { "tranche": 47869, "taux": 15.0, "impot_cumule": 3486.6 },
+      { "tranche": 76812, "taux": 15.5, "impot_cumule": 7828.05 },
+      { "tranche": 125794, "taux": 16.0, "impot_cumule": 15420.3 },
+      { "tranche": 169209, "taux": 16.5, "impot_cumule": 22366.7 },
+      { "tranche": 191474, "taux": 17.0, "impot_cumule": 26040.4 },
+      { "tranche": 273851, "taux": 17.5, "impot_cumule": 40044.5 },
+      { "tranche": 291662, "taux": 18.0, "impot_cumule": 43161.4 },
+      { "tranche": 410776, "taux": 18.5, "impot_cumule": 64601.95 },
+      { "tranche": 643436, "taux": 19.0, "impot_cumule": 107644.05 }
+    ]
+  },
+  "VS": {
+    "tous": [
+      { "tranche": 30000, "taux": 6.3 },
+      { "tranche": 40000, "taux": 7.7 },
+      { "tranche": 50000, "taux": 9.0 },
+      { "tranche": 60000, "taux": 10.5 },
+      { "tranche": 70000, "taux": 11.8 },
+      { "tranche": 80000, "taux": 13.0 },
+      { "tranche": 90000, "taux": 13.3 },
+      { "tranche": 100000, "taux": 13.5 },
+      { "tranche": 200000, "taux": 14.0 },
+      { "tranche": 0, "taux": 2.0 },
+      { "tranche": 5000, "taux": 2.0 },
+      { "tranche": 10000, "taux": 2.7 },
+      { "tranche": 15000, "taux": 3.6 },
+      { "tranche": 20000, "taux": 4.4 },
+      { "tranche": 30000, "taux": 5.8 },
+      { "tranche": 40000, "taux": 6.8 },
+      { "tranche": 50000, "taux": 7.5 },
+      { "tranche": 60000, "taux": 8.0 },
+      { "tranche": 80000, "taux": 8.8 },
+      { "tranche": 90000, "taux": 9.0 },
+      { "tranche": 180000, "taux": 9.9 },
+      { "tranche": 200000, "taux": 10.0 }
+    ]
+  },
+  "VD": {
+    "marié": [
+      { "tranche": 8200, "taux": 5.0, "impot_cumule": 228 },
+      { "tranche": 11700, "taux": 6.0, "impot_cumule": 403 },
+      { "tranche": 14900, "taux": 7.0, "impot_cumule": 595 },
+      { "tranche": 23300, "taux": 8.0, "impot_cumule": 1183 },
+      { "tranche": 40000, "taux": 9.0, "impot_cumule": 2519 },
+      { "tranche": 56500, "taux": 10.0, "impot_cumule": 4004 },
+      { "tranche": 73300, "taux": 11.0, "impot_cumule": 5684 },
+      { "tranche": 89900, "taux": 12.0, "impot_cumule": 7510 },
+      { "tranche": 106600, "taux": 12.5, "impot_cumule": 9514 },
+      { "tranche": 133200, "taux": 13.0, "impot_cumule": 12839 },
+      { "tranche": 159800, "taux": 13.5, "impot_cumule": 16297 },
+      { "tranche": 189800, "taux": 14.0, "impot_cumule": 20347 },
+      { "tranche": 219900, "taux": 14.5, "impot_cumule": 24561 },
+      { "tranche": 252500, "taux": 15.0, "impot_cumule": 29288 },
+      { "tranche": 287600, "taux": 15.5, "impot_cumule": 34553 }
+    ],
+    "célibataire": [
+      { "tranche": 100, "taux": 1.0, "impot_cumule": 1 },
+      { "tranche": 1600, "taux": 2.0, "impot_cumule": 16 },
+      { "tranche": 3400, "taux": 3.0, "impot_cumule": 52 },
+      { "tranche": 5000, "taux": 4.0, "impot_cumule": 100 },
+      { "tranche": 8200, "taux": 5.0, "impot_cumule": 228 },
+      { "tranche": 11700, "taux": 6.0, "impot_cumule": 403 },
+      { "tranche": 14900, "taux": 7.0, "impot_cumule": 595 },
+      { "tranche": 23300, "taux": 8.0, "impot_cumule": 1183 },
+      { "tranche": 40000, "taux": 9.0, "impot_cumule": 2519 },
+      { "tranche": 56500, "taux": 10.0, "impot_cumule": 4004 },
+      { "tranche": 73300, "taux": 11.0, "impot_cumule": 5684 },
+      { "tranche": 89900, "taux": 12.0, "impot_cumule": 7510 },
+      { "tranche": 106600, "taux": 12.5, "impot_cumule": 9514 },
+      { "tranche": 133200, "taux": 13.0, "impot_cumule": 12839 },
+      { "tranche": 159800, "taux": 13.5, "impot_cumule": 16297 },
+      { "tranche": 189800, "taux": 14.0, "impot_cumule": 20347 },
+      { "tranche": 219900, "taux": 14.5, "impot_cumule": 24561 },
+      { "tranche": 252500, "taux": 15.0, "impot_cumule": 29288 },
+      { "tranche": 287600, "taux": 15.5, "impot_cumule": 34553 }
+    ]
+  }
+}
+
+
+
