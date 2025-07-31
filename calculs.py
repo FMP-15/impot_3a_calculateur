@@ -21,7 +21,9 @@ def get_total_taux(commune, religion):
 def appliquer_barème_tranches(revenu, tranches):
     total = 0
     reste = revenu
-    for tranche in tranches:
+    for i, tranche in enumerate(tranches):
+        if "tranche" not in tranche or "taux" not in tranche:
+            raise ValueError(f"Tranche invalide à l'index {i} : {tranche}")
         montant = tranche["tranche"]
         taux = tranche["taux"] / 100
         applicable = min(reste, montant)
@@ -33,12 +35,16 @@ def appliquer_barème_tranches(revenu, tranches):
 
 
 def appliquer_barème_cumulatif(revenu, tranches):
-    for tranche in tranches:
+    for i, tranche in enumerate(tranches):
+        if "tranche" not in tranche:
+            raise ValueError(f"Tranche invalide à l'index {i} : {tranche}")
         if revenu <= tranche["tranche"]:
             if "impot_cumule" in tranche:
                 return tranche["impot_cumule"]
-            else:
+            elif "taux" in tranche:
                 return revenu * tranche["taux"] / 100
+            else:
+                raise ValueError(f"Tranche incomplète à l'index {i} : {tranche}")
     return revenu * tranches[-1]["taux"] / 100
 
 
