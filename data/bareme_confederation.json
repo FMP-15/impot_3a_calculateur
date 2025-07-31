@@ -1,119 +1,119 @@
-{
+
   "Confédération": {
     "Personne mariée / vivant seule, avec enfant": [
       {
-        "revenu": 0,
-        "taux": 0.0
+        "taux": 0.0,
+        "tranche": 0
       },
       {
-        "revenu": 29700,
-        "taux": 1.0
+        "taux": 1.0,
+        "tranche": 29700
       },
       {
-        "revenu": 53400,
-        "taux": 2.0
+        "taux": 2.0,
+        "tranche": 53400
       },
       {
-        "revenu": 61300,
-        "taux": 3.0
+        "taux": 3.0,
+        "tranche": 61300
       },
       {
-        "revenu": 79100,
-        "taux": 4.0
+        "taux": 4.0,
+        "tranche": 79100
       },
       {
-        "revenu": 94900,
-        "taux": 5.0
+        "taux": 5.0,
+        "tranche": 94900
       },
       {
-        "revenu": 108600,
-        "taux": 6.0
+        "taux": 6.0,
+        "tranche": 108600
       },
       {
-        "revenu": 120500,
-        "taux": 7.0
+        "taux": 7.0,
+        "tranche": 120500
       },
       {
-        "revenu": 130500,
-        "taux": 8.0
+        "taux": 8.0,
+        "tranche": 130500
       },
       {
-        "revenu": 138300,
-        "taux": 9.0
+        "taux": 9.0,
+        "tranche": 138300
       },
       {
-        "revenu": 144200,
-        "taux": 10.0
+        "taux": 10.0,
+        "tranche": 144200
       },
       {
-        "revenu": 148200,
-        "taux": 11.0
+        "taux": 11.0,
+        "tranche": 148200
       },
       {
-        "revenu": 150300,
-        "taux": 12.0
+        "taux": 12.0,
+        "tranche": 150300
       },
       {
-        "revenu": 152300,
-        "taux": 13.0
+        "taux": 13.0,
+        "tranche": 152300
       },
       {
-        "revenu": 940800,
-        "taux": 13.0
+        "taux": 13.0,
+        "tranche": 940800
       },
       {
-        "revenu": 940900,
-        "taux": 11.5
+        "taux": 11.5,
+        "tranche": 940900
       }
     ],
     "Personne vivant seule, sans enfant": [
       {
-        "revenu": 0,
-        "taux": 0.0
+        "taux": 0.0,
+        "tranche": 0
       },
       {
-        "revenu": 15200,
-        "taux": 0.77
+        "taux": 0.77,
+        "tranche": 15200
       },
       {
-        "revenu": 33200,
-        "taux": 0.88
+        "taux": 0.88,
+        "tranche": 33200
       },
       {
-        "revenu": 43500,
-        "taux": 2.64
+        "taux": 2.64,
+        "tranche": 43500
       },
       {
-        "revenu": 58000,
-        "taux": 2.9699999999999998
+        "taux": 2.9699999999999998,
+        "tranche": 58000
       },
       {
-        "revenu": 76100,
-        "taux": 5.9399999999999995
+        "taux": 5.9399999999999995,
+        "tranche": 76100
       },
       {
-        "revenu": 82000,
-        "taux": 6.6
+        "taux": 6.6,
+        "tranche": 82000
       },
       {
-        "revenu": 108800,
-        "taux": 8.8
+        "taux": 8.8,
+        "tranche": 108800
       },
       {
-        "revenu": 141500,
-        "taux": 11.0
+        "taux": 11.0,
+        "tranche": 141500
       },
       {
-        "revenu": 184900,
-        "taux": 13.2
+        "taux": 13.2,
+        "tranche": 184900
       },
       {
-        "revenu": 793300,
-        "taux": 13.2
+        "taux": 13.2,
+        "tranche": 793300
       },
       {
-        "revenu": 793400,
-        "taux": 11.5
+        "taux": 11.5,
+        "tranche": 793400
       }
     ]
   }
